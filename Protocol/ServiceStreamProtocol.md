@@ -41,7 +41,7 @@ Netstream增加serve消息，用于客户端向服务端请求/创建业务流�
 |Produre Name   |String|业务标识符，标识是一个业务消息<br>暂定cdnunion20170314<br>|
 |Transaction ID |Number|0|
 |Service Header |Object|业务消息头部|
-|Service Content|String|业务消息内容，如果为空则为null type|
+|Service Content|Object|业务消息内容，如果为空则为null type|
 
 不同的业务消息，服务端会做不同的响应，或者不做响应，具体由业务消息定义。
 服务端响应消息采用相同的消息格式。
@@ -55,8 +55,8 @@ Netstream增加serve消息，用于客户端向服务端请求/创建业务流�
 |serviceType  |Number |业务消息类型， 0 for 弹幕，1 for 能力协商|
 |priority     |Number |消息的优先级，0 最高，7最低|
 |abandon      |Boolean|0 for 不可丢弃消息，1 for 可丢弃消息|
-|messageID    |String|消息的唯一标识，由客户端设置。服务端响应消息应设置为客户端消息的原始messageID|
-|networkID    |String|消息产生的网络ID, networkID需向联盟注册|
+|messageID    |String |消息的唯一标识，由客户端设置。服务端响应消息应设置为客户端消息的原始messageID|
+|networkID    |String |消息产生的网络ID, networkID需向联盟注册|
 
 #### 2.4.2 Service Content Object 格式
 
