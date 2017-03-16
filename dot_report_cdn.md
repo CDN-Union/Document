@@ -9,6 +9,6 @@ n | true | string | 推流域名+流名称
 vr | true | string | 视频码率，单位 kb/s
 fr | true | string | 帧率，单位帧数
 tm | true | string | unix时间戳
-cnet | true | string | 端网络
+cnet | true | string | 端网络，2G/3G/4G/wifi
 cip | true | string | 端ip
 cver | true | string | 端版本
