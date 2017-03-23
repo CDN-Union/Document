@@ -8,12 +8,12 @@ biz | true | string | 服务名，cdn
 plat | true | string | 服务商标识,
 check | true | string | 校验数据，可为随机数或设备id
 sign | true | string | 签名（见sign签名生成规则）
-data | true | json 数组 | 批量打点数据（见data字段Json定义）
+data | true | json 数组 | 批量打点数据（见data字段的单个Json）
 
 
 {"errno":0,"errmsg":"success","data":${成功个数}}
 
-data字段Json定义
+data字段的单个Json （约定单推流线路每5秒上报一次） 
 
 参数 | 是否必须 | 参数类型 | 参数说明 
 ----|------|----|----
