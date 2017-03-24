@@ -12,3 +12,5 @@
 其他字段选填。
 # 延迟测量方法
 在推流 SDK 中每隔 15s 发送 `"currentTime", 1489631528` 的 CommandMessage。参数为当前时间戳，客户端收到后可以测量延迟。
+# 数据阶段
+音频 csid 为 6，视频/AMF0/AMF3消息 csid 为 4，其他 csid 为 5
