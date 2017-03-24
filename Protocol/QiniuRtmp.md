@@ -9,6 +9,7 @@
 必填字段为：
  - 播放：`cdn_ip` 边缘节点 IP
  - 推流：`framerate` 帧率
+
 其他字段选填。
 # 延迟测量方法
 在推流 SDK 中每隔 15s 发送 `"currentTime", 1489631528` 的 CommandMessage。参数为当前时间戳，客户端收到后可以测量延迟。
