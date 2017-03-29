@@ -1,3 +1,5 @@
+接口域名 为 dot.panda.tv 端口 80
+
 一、HTTP POST 接口：
 
 /reports        cdn推流打点汇报（批量）
