@@ -104,3 +104,20 @@ Service Content由不同的业务类型决定，客户可自定义。
 |danmuType |Number|弹幕类型，0 for 自定义消息，非0 for 礼物类型|
 |content   |String|自定义消息内容或礼物数量|
 
+## 5 Data Message
+基于标准协议 1.0 7.1.2节，Data message用于传输metadata及其他用户信息。messageType 18 用于标识AMF0，messageType 15 用于标识AMF3
+
+### 5.1 metadata 字段
+用于标识 metadata，及其他可一次性描述的用户信息。必填字段：
+
+|Property  |Type  |Description|
+|----------|------|-----------|
+|cdn_ip    |String|CDN节点IP|
+|framerate |Number|视频比特率|
+
+### 5.2 latency 字段
+间隔15s发送， 用于检测观看端与推流端的延迟时间
+
+|Property  |Type  |Description|
+|----------|------|-----------|
+|currentTime|Number|推流端绝对时间戳，单位为毫秒|
