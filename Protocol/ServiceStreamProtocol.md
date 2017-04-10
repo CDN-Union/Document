@@ -115,7 +115,7 @@ Service Content由不同的业务类型决定，客户可自定义。
 |cdn_ip    |String|CDN节点IP|
 |framerate |Number|视频比特率|
 
-### 5.2 latency 字段
+### 5.2 latency
 间隔15s发送， 用于检测观看端与推流端的延迟时间
 
 |Property  |Type  |Description|
