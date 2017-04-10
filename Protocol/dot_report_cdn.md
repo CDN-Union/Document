@@ -22,7 +22,7 @@ data字段的单个Json （约定单推流线路每5秒上报一次）
 type | true | string | cdnpush、 等
 n | true | string | 推流域名+流名称
 vr | true | int | 视频码率，单位 kb/s
-fr | true | int | 帧率，单位帧数
+fr | true | int | 帧数，单位帧数
 tm | true | int | unix时间戳，单位毫秒
 cnet | true | string | 端网络，2G/3G/4G/wifi
 cip | true | string | 端ip
