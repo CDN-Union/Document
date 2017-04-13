@@ -9,7 +9,8 @@
 必填字段为：
  - 播放：`cdn_ip` 边缘节点 IP
  - 推流：`framerate` 帧率
-
+ - 推流：`videodatarate` 视频码率(kbps), 方便CDN判断是否进行转码
+ 
 其他字段选填。
 
 # Latency Benchmark 
