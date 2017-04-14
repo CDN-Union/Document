@@ -16,9 +16,7 @@
 
 ## Latency Benchmark 
 
-关于延迟测量方法(Latency Benchmark)，
-在推流 SDK 中每隔 15s 发送 `"currentTime", 1489631528` 的 CommandMessage。
-参数为当前时间戳，客户端收到后可以测量延迟。
+关于延迟测量方法(Latency Benchmark)，时间戳同步和延迟测量。
 
 ### Time Sync
 
