@@ -39,7 +39,7 @@
 
 在推流时，发送onMetaData：
 Key：cu_basetime
-Value: 绝对时间，格式TBD
+Value: 绝对时间，格式TBD #转换为毫秒是1492137596654
 ```
 
 ## Timestamp Packet
@@ -49,6 +49,35 @@ Value: 绝对时间，格式TBD
 CDN收到包后，不做时间戳改变，透传给播放器。
 
 播放器根据校准时的绝对时间，和流中的时间比较得出延迟。
+
+例如：
+
+```
+假设onMetaData中指定的绝对时间1492137596654
+推流时发送的包序列：
+
+Type: Video
+Timestamp: 0
+Data: xxx
+#包的绝对时间: 1492137596654+0
+
+Type: Audio
+Timestamp: 0
+Data: xxx
+#包的绝对时间: 1492137596654+0
+
+Type: Video
+Timestamp: 40
+Data: xxx
+#包的绝对时间: 1492137596654+40
+
+Type: Audio
+Timestamp: 50
+Data: xxx
+#包的绝对时间: 1492137596654+50
+```
+
+在播放器根据当前的时间，可以计算出延迟。
 
 # 数据阶段
 音频 csid 为 6，视频/AMF0/AMF3消息 csid 为 4，其他 csid 为 5
