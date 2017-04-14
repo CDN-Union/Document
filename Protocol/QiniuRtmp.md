@@ -16,7 +16,24 @@
 # Latency Benchmark 
 
 关于延迟测量方法(Latency Benchmark)，
-在推流 SDK 中每隔 15s 发送 `"currentTime", 1489631528` 的 CommandMessage。参数为当前时间戳，客户端收到后可以测量延迟。
+在推流 SDK 中每隔 15s 发送 `"currentTime", 1489631528` 的 CommandMessage。
+参数为当前时间戳，客户端收到后可以测量延迟。
+
+## Time Sync
+
+推流和播放器会调用API同步校准时间，熊猫提供API返回当前绝对时间。
+
+推流时，将绝对时间，放到`onMetaData`数据包中，供后续时间戳作为基准参考（比如使用相对时间戳）。
+
+推流端校准时间后，使用校准的时间打Packet的时间戳。
+
+## Timestamp Packet
+
+推流端可以选择相对时间，将Timestamp在RTMP/FLV标准协议的Timestamp中传输。
+
+CDN收到包后，不做时间戳改变，透传给播放器。
+
+播放器根据校准时的绝对时间，和流中的时间比较得出延迟。
 
 # 数据阶段
 音频 csid 为 6，视频/AMF0/AMF3消息 csid 为 4，其他 csid 为 5
