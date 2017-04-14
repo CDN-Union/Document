@@ -36,6 +36,10 @@
 ```
 推流端启动时，调用API：http://foo.me/api/timestamp
 返回：TBD
+
+在推流时，发送onMetaData：
+Key：cu_basetime
+Value: 绝对时间，格式TBD
 ```
 
 ## Timestamp Packet
