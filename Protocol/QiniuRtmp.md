@@ -27,6 +27,17 @@
 
 推流端校准时间后，使用校准的时间打Packet的时间戳。
 
+> 备注：在APP启动时，做一次时间校准。在推流前做一次校准。
+
+> 备注：需要使用UTC时间。
+
+例如：
+
+```
+推流端启动时，调用API：http://foo.me/api/timestamp
+返回：TBD
+```
+
 ## Timestamp Packet
 
 推流端可以选择相对时间，将Timestamp在RTMP/FLV标准协议的Timestamp中传输。
