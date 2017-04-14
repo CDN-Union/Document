@@ -10,6 +10,7 @@
  - 播放：`cdn_ip` 边缘节点 IP
  - 推流：`framerate` 帧率
  - 推流：`videodatarate` 视频码率(kbps), 方便CDN判断是否进行转码
+ - 推流：`audiodatarate` 音频码率
  
 其他字段选填。
 
