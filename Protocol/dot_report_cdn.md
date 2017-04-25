@@ -1,4 +1,4 @@
-接口域名 为 dot.panda.tv 端口 80
+接口域名 为 dot.gate.panda.tv 端口 80/443
 
 一、HTTP POST 接口：
 
