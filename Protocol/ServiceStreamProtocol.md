@@ -92,7 +92,7 @@ Service Content由不同的业务类型决定，客户可自定义。
 #### 4.2.1 弹幕业务消息格式
 弹幕的transmitType是0，serviceType是0。
 弹幕消息不需要服务端进行响应。
-其Service Cotent Object包含以下字段：
+其Service Content Object包含以下字段：
 
 |Property  |Type  |Description|
 |----------|------|-----------|
