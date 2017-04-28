@@ -1,8 +1,18 @@
 接口域名 为 dot.gate.panda.tv 端口 80/443
 
-一、HTTP POST 接口：
+一、HTTP 接口：
 
-/reports        cdn推流打点汇报（批量）
+/clock    GET     当前时钟
+
+参数 | 是否必须 | 参数类型 | 参数说明 
+----|------|----|----
+plat | false | string | 服务商标识,
+check | false | string | 校验数据，可为随机数或设备id
+
+{"errno":0,"errmsg":"success","data":$unixtime}
+
+
+/reports    POST     cdn推流打点汇报（批量）
 
 参数 | 是否必须 | 参数类型 | 参数说明 
 ----|------|----|----
