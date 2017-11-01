@@ -36,29 +36,31 @@ uint8_t* pRightChannelData = {…};
 uint8_t* pData[] = { pLeftChannelData ,pRightChannelData };
 ```
 
+### 接入用例
+
 ### 支持性
-|method/functions|UnionStreamingKit|PLMediaStreamingKit|
+|method/functions|UnionLiveKit|PLMediaStreamingKit|
 |---|---|---|
-|initWithSampleRate|1.0|?|
-|startCapture|1.0|?|
-|stopCapture|1.0|?|
-|pauseCapture|1.0|?|
-|pauseWithMuteData|1.0|?|
-|resumeCapture|1.0|?|
-|audioProcessingCallback|1.0|?|
-|pcmProcessingCallback|1.0|?|
+|initWithSampleRate|1.0+|?|
+|startCapture|1.0+|?|
+|stopCapture|1.0+|?|
+|pauseCapture|1.0+|?|
+|pauseWithMuteData|1.0+|?|
+|resumeCapture|1.0+|?|
+|audioProcessingCallback|1.0+|?|
+|pcmProcessingCallback|1.0+|?|
 
 ### 可用组件列表
 // @TODO：完善可用组件链接  
 |name|link|provider|
 |---|---|---|
-|---|---|---|
+|？|？|？|
 
 
 ### 相关资料
 // @TODO: 完善可用链接
-- [UnionStreamingKit](/)
-- [PLMediaStreamingKit](/)
+- [UnionLiveKit](/) @Provide by
+- [PLMediaStreamingKit](/) @Provide by
 
 ### 贡献者
 **Teams**
