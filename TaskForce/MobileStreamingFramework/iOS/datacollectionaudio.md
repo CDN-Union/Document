@@ -39,7 +39,7 @@ uint8_t* pData[] = { pLeftChannelData ,pRightChannelData };
 ### 接入用例
 
 ### 支持性
-|method/functions|UnionLiveKit|PLMediaStreamingKit|
+|method/functions|[UnionLiveKit](/)|[PLMediaStreamingKit](/)|
 |---|---|---|
 |initWithSampleRate|1.0+|?|
 |startCapture|1.0+|?|
