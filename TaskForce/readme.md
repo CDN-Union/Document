@@ -3,7 +3,7 @@
 ## Streaming Kit （移动端推流框架）
 ### Mobile Live Kit (推流框架)
 Members：七牛 金山 星域 网宿 熊猫  
-[MobileLiveKit](MobileStreamingFramework): 推流框架组
+[MobileLiveKit](MobileLiveKit): 推流框架组
 
 ## ClientSide （客户端标准）
 ### P2P （P2P）
