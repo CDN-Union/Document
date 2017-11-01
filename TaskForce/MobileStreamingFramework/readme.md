@@ -22,9 +22,8 @@ CDN-Union直播推流SDK，覆盖Android和iOS平台，完成了移动平台音�
 ### 功能实现
 
 ### 支持框架列表
-
-[UnionLiveKit](/) @provide by
-[PLMediaStreamingKit](/) @provide by
+- [UnionLiveKit](/) @provide by  
+- [PLMediaStreamingKit](/) @provide by
 
 ### TaskList
 - [ ] 请开发人员将支持的框架transfer回自己厂商/个人github并添加链接.并按照 [iOS音频采集模块](iOS/datacollectionaudio.md)格式填写已支持接口列表及版本号 due: 20171106
