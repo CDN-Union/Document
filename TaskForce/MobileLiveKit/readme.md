@@ -1,4 +1,4 @@
-# CDN-Union Mobile Streaming framework 
+# CDN-Union Mobile Live Kit
 ## 概述
 CDN-Union直播推流SDK，覆盖Android和iOS平台，完成了移动平台音视频数据的采集、处理、编码和推流工作。
 ### 功能列表
