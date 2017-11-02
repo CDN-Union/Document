@@ -4,7 +4,8 @@
 ```
 public SinkPin<ImgBufFrame> getVideoSink();
 ```
-实现音频编码后数据的输入接口
+- 实现音频编码后数据的输入接口
+
 ```
 public SinkPin<AudioBufFrame> getAudioSink();
 ```
